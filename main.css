@@ -236,3 +236,66 @@ float: right;
  .card .title .add-cart p:hover {
   color: #f34f3f;
 }
+#video {
+  background: #f8f8f8;
+  padding: 110px 0;
+}
+#video .video {
+  overflow: hidden;
+}
+.video:hover .image a img {
+   transform: scale(1.05) translateZ(0);
+}
+ .video .image {
+  position: relative;
+}
+.video .image a img {
+  width: 100%;
+  transform: scale(1) translateZ(0);
+  transition: transform 0.3s ease;
+}
+ .play {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 41%;
+}
+.play i {
+  color: #f34f3f;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 31px 33px;
+  font-size: 20px;
+}
+#video .content {
+  padding: 0 45px;
+}
+
+#video .content h2 {
+  color: #1b1b1b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.447em;
+}
+
+ .content h2 span {
+  color: #f34f3f;
+}
+ .content p {
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 27px;
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+}
+ .content .title {
+  margin-top: 25px;
+}
+ .content .title .img {
+  display: inline-block;
+}
+.content .title p {
+  display: inline-block;
+  margin: 0 0 15px 15px;
+}
