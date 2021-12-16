@@ -41,8 +41,6 @@
     min-height: 89px;
     max-height: 89px;
     opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform-origin: 50% 50% 0px;
 }
 .title-text img{
     font-weight: 400;
@@ -69,3 +67,170 @@ float: right;
     transform: scale(1.5,1); 
  }
 
+ #products-card{
+    padding-top: 60px;
+ }
+ .products-navbar{
+     padding-bottom: 20px;
+ }
+ .products-navbar ul{
+     list-style-type: none;
+ }
+ .products-navbar ul li{
+      display: inline-block;
+      padding-right: 30px;
+ }
+ .products-navbar ul li a{
+     transition: all 0.2s linear;
+ }
+ .products-navbar ul li a:hover{
+     color: #f34f3f;
+ }
+.filter{
+    position: relative;
+    padding-bottom: 20px;
+}
+.filter:hover .sub-filter{
+    visibility:visible;
+    opacity: 1;
+}
+.filter span{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.filter i{
+    cursor: pointer;
+}
+.products-navbar ul li a,.filter span{
+     font-size: 12px;
+     color: #1b1b1b;
+     font-family: "Montserrat", sans-serif;
+     text-transform: uppercase;
+     letter-spacing: .1em;
+     font-weight: 500;
+}
+.filter .sub-filter{
+    opacity: 0;
+    visibility: hidden;
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: -335px;
+    width: 408px;
+    z-index: 9999999;
+    padding: 10px 0 10px 15px;
+}
+.filter .sub-filter ul{
+    list-style-type: none;
+    padding: 0 25px;
+}
+.filter .sub-filter ul h4{
+    font-family: "Playfair Display", serif;
+    line-height: 1.363em;
+    font-size: 23px;
+    color: #1b1b1b;
+    font-weight: 500;
+}
+.sub-filter ul li{
+    padding-bottom: 7px;
+}
+.sub-filter ul li a{
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6D6A6A;
+}
+.sub-filter ul li a:hover{
+     color: #0e0e0e;
+}
+
+#allProducts{
+     padding: 10px 0 50px 0;
+}
+.same-product .card{
+    cursor: pointer;
+    border: none; 
+}
+.same-product .card:hover .image img{
+    transform: scale(1.05) translateZ(0);
+}
+.same-product .card:hover .add-cart{
+      transform: translateX(-50%) !important;
+      opacity: 1 !important;
+}
+.same-product .card:hover .price{
+     transform: translateX(60px);
+     opacity: 0;
+}
+ .same-product .card .image{
+      overflow: hidden;
+}
+.same-product .card .image img{
+    width: 100%;
+    transition: transform .2s ease-out;
+    transform: scale(1) translateZ(0);
+}
+.card .image .info{
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 5px 13px;
+    letter-spacing: 1px;
+    background: #000;
+} 
+.card .image .info.sale {
+  background: #ffffff;
+}
+.card .image .info.sale span {
+  color: #1b1b1b;
+}
+.card .image .info.new {
+  background: #f34f3f;
+}
+.card .image .info.new span {
+  color: #ffffff;
+}
+.card .image .info span {
+  font-size: 17px -1;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+.card .title {
+  position: relative;
+  padding: 20px 0;
+}
+.card .title p,.card .title span {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+ .card .title .price {
+  display: inline-block;
+  position: relative;
+  transition: all .3s ease;
+}
+.card .title .price span {
+  font-weight: normal;
+  color: #AFAFAF;
+}
+.card .title .add-cart {
+  display: inline-block;
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .4s ease;
+}
+ .card .title .add_to_cart p {
+  font-weight: normal;
+  color: #AFAFAF;
+}
+ .card .title .add-cart p:hover {
+  color: #f34f3f;
+}
