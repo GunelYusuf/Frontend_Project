@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiorello</title>
+    <link rel="stylesheet" href="./vegas/vegas.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5563866a19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
-    <header class="main">
+    <header class="head">
         <div class="container">
             <div class="row">
                 <div class="col-3">
@@ -471,7 +473,34 @@
             </div>
         </div>
     </header>
-    <script src="script.js"></script>
-</body>
-
+    <main>
+        <section>
+            <div id="slider" style="width: 100%; height: 477px;">
+                <div class="title">
+                  <h2>Send <span>flowers</span> like you mean it. </h2>
+                </div>   
+                <div class="title-text">
+                  <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special
+                   cursus a sit amet mauris. </p>
+                   <img src="./Main-Images/main-slider-sara.png" alt="">  
+                </div>
+                    <span class="arrows"><i class="fal fa-arrow-left"></i></span>
+                    <span class="arrows"><i class="fal fa-arrow-right"></i></span>
+                </div>
+        </section>
+    </main>
+   
+<script src="script.js"></script>
+ </body>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="./vegas/vegas.min.js"></script>
+    <script>
+        $("#slider").vegas({
+            slides: [
+                { src: "./Main-Images/main-slider1.jpeg" },
+                { src: "./Main-Images/main-slider2.jpeg" },
+                { src: "./Main-Images/main-slider-3.jpeg" }
+            ]
+        });
+    </script>
 </html>

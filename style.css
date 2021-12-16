@@ -45,7 +45,7 @@ header .container .row .navbar_click_icon .icon i {
 }
 
 header .container .row .navbar_click_icon .icon i:hover {
-  color: #6D6A6A;
+  color: #726f6f;
 }
 
 header .container .row .navbar {
@@ -90,7 +90,7 @@ header .container .row .navbar .navbar-list ul li div {
   padding: 10px 0;
 }
 
-.navbar-list ul li div ul li a {
+header .container .row .navbar-list ul li div ul li a {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0px;
@@ -169,6 +169,9 @@ header .container .row nav ul li.home .sub_home {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+header .container .row nav ul li.home .sub_home ul {
+  padding: 20px;
+}
 nav ul li.home .sub_home ul li,nav ul li.pages .sub_pages ul li,nav ul li.shop .sub_shop ul li,nav ul li.portfolio .sub_portfolio ul li.portfolio_single .sub_portfolio_single ul li,nav ul li.blog .sub_blog ul li.post_types .sub_post_types ul li,nav ul li.portfolio .sub_portfolio ul li.portfolio_layouts .sub_portfolio_layouts ul li{
   padding: 0 0 15px 0;
   width: 160px;
@@ -199,6 +202,9 @@ header .container .row nav ul li.pages .sub_pages {
   left: 137px;
   background: #fff;
   transition: all 0.2s linear;
+}
+header .container .row nav ul li.pages .sub_pages ul {
+  padding: 20px;
 }
 header .container .row nav ul li.pages .sub_pages ul li:hover a::after {
   width: 100%;
@@ -414,6 +420,9 @@ header .container .row nav ul li.blog .sub_blog ul li.post_types .sub_post_types
 }
  header .container .row nav ul li.blog .sub_blog ul li.post_types .sub_post_types ul li a::after {
   width: 0;
+}
+header .container .row nav ul li.blog .sub_blog ul li.post_types .sub_post_types ul {
+  padding: 20px;
 }
 nav ul li.elements:hover .sub_elements {
    z-index: 99999;
