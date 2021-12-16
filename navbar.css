@@ -29,22 +29,22 @@ header .container .row .logo .img a img {
   width: 80%;
 }
 
-header .container .row .navbar_click_icon {
+header .container .row .navbar-icon {
   display: none;
 }
 
-header .container .row .navbar_click_icon .icon {
+header .container .row .navbar-icon .icon {
   float: right;
   margin: 25px 0;
 }
 
-header .container .row .navbar_click_icon .icon i {
+header .container .row .navbar-icon .icon i {
   font-size: 30px;
   color: #adacac;
   cursor: pointer;
 }
 
-header .container .row .navbar_click_icon .icon i:hover {
+header .container .row .navbar-icon .icon i:hover {
   color: #726f6f;
 }
 
@@ -52,7 +52,7 @@ header .container .row .navbar {
   overflow-y: scroll;
   box-shadow: -10px -10px 8px #eee;
   transform: translate(340px);
-  position: fixed;
+  position:fixed;
   width: 330px;
   height: 100%;
   right: 0;
@@ -71,7 +71,13 @@ header .container .row .navbar .close i {
   color: #f34f3f;
   font-size: 25px;
 }
-
+/* header .container .row .sidebar .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  cursor: pointer;
+} */
 header .container .row .navbar .navbar-list ul {
   padding: 40px;
   list-style: none;
@@ -305,7 +311,6 @@ header .container .row nav ul li.portfolio .sub_portfolio ul li.portfolio_layout
   top: 115px;
   left: 200px;
   background: #fff;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
