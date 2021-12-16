@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiorello</title>
     <link rel="stylesheet" href="./vegas/vegas.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
@@ -489,19 +489,19 @@
         </section>
         <section id="products-card"> 
             <div class="container p-0">
-                <div class="row w-100">
+                <div class="row w-100 m-0 p-0">
                     <div class=" w-100 d-flex justify-content-between">
                         <div class="products-navbar">
                             <ul>
-                                <li data-id="1"><a href="#" style="color:#f34f3f;">All</a></li>
-                                        <li data-id="2"><a href="#">Popular</a></li>
-                                        <li data-id="3"><a href="#">Winter</a></li>
-                                        <li data-id="4"><a href="#">Various</a></li>
-                                        <li data-id="5"><a href="#">Exotic</a></li>
-                                        <li data-id="6"><a href="#">Greens</a></li>
-                                        <li data-id="7"><a href="#">Cactuses</a></li>
-                                    </ul>
-                                </div>
+                             <li><a  class="tabmenu" data-id="1a"style="color:#f34f3f">All</a></li>
+                                <li><a  class="tabmenu" data-id="2a">Popular</a></li>
+                                <li><a  class="tabmenu" data-id="3a">Winter</a> </li>
+                                <li><a  class="tabmenu" data-id="4a">Various</a></li>
+                                <li><a  class="tabmenu" data-id="5a">Exotic</a></li>
+                                <li><a  class="tabmenu" data-id="6a">Greens</a></li>
+                                <li><a  class="tabmenu" data-id="7a">Cactuses</a></li>
+                            </ul>
+                       </div>
                                 <div class="filter">
                                     <span>Filter</span>
                                     <i class="fas fa-caret-down"></i>
@@ -530,14 +530,14 @@
             </div>
         </section>
         <section id="allProducts">
-            <div class="container p-0">
-                <div class="row w-100 m-0 p-0">
-                    <div class="all_product same-product" data-id="1">
-                   <div class="row">
+        <div class="container p-0">
+             <div class="row w-100 m-0 p-0">
+               <div class="product-list" id="1a">
+                    <div class="row">
                             <div class="col-lg-3 col-md-6 col-xs-12">
-                                <div class="card" data-id="1">
+                                <div class="card">
                                     <div class="image">
-                                        <img class="first_img" src="Products-Images/card-cactus-dib.jpeg" title="Majesty Palm" alt="Product 1">
+                                        <img class="first_img" src="Products-Images/card-kaktus-img.jpeg" title="Majesty Palm" alt="Product 1">
                                     </div>
                                     <div class="title text-center">
                                         <p>MAJESTY PALM</p>
@@ -552,7 +552,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-xs-12">
-                                <div class="card" data-id="2">
+                                <div class="card">
                                     <div class="image">
                                         <img class="second_img" src="Products-Images/card-zanbaq-img.jpeg" title="Foxglove Flower" alt="Product 2">
                                     </div>
@@ -589,7 +589,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-xs-12">
-                                <div class="card" data-id="3">
+                                <div class="card">
                                     <div class="image">
                                         <img src="Products-Images/card-zanbaq-tum-img.jpeg" title="Spring Snowflake" alt="Product 4">
                                     </div>
@@ -605,11 +605,11 @@
                                     </div>
                                 </div>
                             </div>
-                   </div>
+                    </div>
                             
                     <div class="row mt-2">
                             <div class="col-lg-3 col-md-6 col-xs-12">
-                                <div class="card" data-id="4">
+                                <div class="card">
                                     <div class="image">
                                         <img src="Products-Images/card-orange-flower.jpeg" title="Scarlet Sage" alt="Product 5">
                                         <div class="info sale">
@@ -647,12 +647,12 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-xs-12">
-                                <div class="card" data-id="5">
+                                <div class="card">
                                     <div class="image">
                                         <img src="Products-Images/card-sarmashiq.jpeg" title="Sweet Alyssum" alt="Product 7">
                                     </div>
                                     <div class="title text-center">
-                                        <p>SWEET ALYSSUM</p>
+                                        <p>SUMMER SAVORY</p>
                                         <div class="add-cart">
                                             <p class="addBasket">Add to cart</p>
                                         </div>
@@ -669,7 +669,7 @@
                                         <img src="Products-Images/card-rose.jpeg" title="Spring Snowflake" alt="Product 8">
                                     </div>
                                     <div class="title text-center">
-                                        <p>SPRING SNOWFLAKE</p>
+                                        <p>WILD ROSES</p>
                                         <div class="add-cart">
                                             <p>Buy on Amazon</p>
                                         </div>
@@ -680,12 +680,511 @@
                                     </div>
                                 </div>
                             </div>
+                    </div>
+               </div>
+               <div class="product-list popular" id="2a" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="first_img" src="Products-Images/card-kaktus-img.jpeg" title="Majesty Palm"
+                                    alt="Product 1">
+                            </div>
+                            <div class="title text-center">
+                                <p>MAJESTY PALM</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-        </section>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="second_img" src="Products-Images/card-zanbaq-img.jpeg" title="Foxglove Flower"
+                                    alt="Product 2">
+                            </div>
+                            <div class="title text-center">
+                                <p>FOXGLOVE FLOWER</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="third_img" src="Products-Images/card-dibcek-img.jpeg" title="Sweet Alyssum"
+                                    alt="Product 3">
+                                <div class="info">
+                                    <span>Sold</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>SWEET ALYSSUM</p>
+                                <div class="add-cart">
+                                    <p>Read more</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-zanbaq-tum-img.jpeg" title="Spring Snowflake" alt="Product 4">
+                            </div>
+                            <div class="title text-center">
+                                <p>SPRING SNOWFLAKE</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">170</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row mt-2">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-orange-flower.jpeg" title="Scarlet Sage" alt="Product 5">
+                                <div class="info sale">
+                                    <span>Sale</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>SCARLET SAGE</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span><del>$259</del></span>
+                                    <span>$</span>
+                                    <span class="productTotalPrice">159</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="product-list winter" id="3a" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="first_img" src="Products-Images/card-kaktus-img.jpeg" title="Majesty Palm"
+                                    alt="Product 1">
+                            </div>
+                            <div class="title text-center">
+                                <p>MAJESTY PALM</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="second_img" src="Products-Images/card-zanbaq-img.jpeg" title="Foxglove Flower"
+                                    alt="Product 2">
+                            </div>
+                            <div class="title text-center">
+                                <p>FOXGLOVE FLOWER</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="third_img" src="Products-Images/card-dibcek-img.jpeg" title="Sweet Alyssum"
+                                    alt="Product 3">
+                                <div class="info">
+                                    <span>Sold</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>SWEET ALYSSUM</p>
+                                <div class="add-cart">
+                                    <p>Read more</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+               <div class="product-list various" id="4a" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-cactus-dib.jpeg" title="Rock Soapwort" alt="Product 6">
+                            </div>
+                            <div class="title text-center">
+                                <p>ROCK SOAPWORT</p>
+                                <div class="add-cart">
+                                    <p>View products</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-sarmashiq.jpeg" title="Sweet Alyssum" alt="Product 7">
+                            </div>
+                            <div class="title text-center">
+                                <p>SUMMER SAVORY</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-rose.jpeg" title="Spring Snowflake" alt="Product 8">
+                            </div>
+                            <div class="title text-center">
+                                <p>WILD ROSES</p>
+                                <div class="add-cart">
+                                    <p>Buy on Amazon</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/tulpan.jpeg" title="Spring Snowflake" alt="Product 4">
+                            </div>
+                            <div class="title text-center">
+                                <p>COLORFUL TULIPS</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">350</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row mt-2">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/WILD-CACTUS.jpeg" title="Scarlet Sage" alt="Product 5">
+                                <div class="info sale">
+                                    <span>Sale</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>WILD CACTUS</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span><del>$259</del></span>
+                                    <span>$</span>
+                                    <span class="productTotalPrice">159</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/TWO TULIPS.jpeg" title="Sweet Alyssum" alt="Product 7">
+                            </div>
+                            <div class="title text-center">
+                                <p>PINK FLOWER TREE</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Select options</p>
+                                </div>
+                                <div class="price">
+                                    <span>$180</span>
+                                    <span>-</span>
+                                    <span class="productTotalPrice">$350</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img class="third_img" src="Products-Images/ordinary cactus.jpeg" title="Sweet Alyssum" alt="Product 3">
+                                <div class="info">
+                                    <span>Sold</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>CACTUS IN ORANGE</p>
+                                <div class="add-cart">
+                                    <p>Read more</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="Products-Images/card-orange-flower.jpeg" title="Scarlet Sage" alt="Product 5">
+                                <div class="info sale">
+                                    <span>Sale</span>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                <p>ORANGE AMARYLLIS</p>
+                                <div class="add-cart">
+                                    <p class="addBasket">Add to cart</p>
+                                </div>
+                                <div class="price">
+                                    <span>$</span>
+                                    <span class="productTotalPrice">259</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div class="product-list exotic" id="5a" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/card-rose.jpeg" title="Spring Snowflake" alt="Product 8">
+                                </div>
+                                <div class="title text-center">
+                                    <p>WILD ROSES</p>
+                                    <div class="add-cart">
+                                        <p>Buy on Amazon</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/tulpan.jpeg" title="Spring Snowflake" alt="Product 4">
+                                </div>
+                                <div class="title text-center">
+                                    <p>COLORFUL TULIPS</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Add to cart</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">350</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/card-orange-flower.jpeg" title="Scarlet Sage" alt="Product 5">
+                                    <div class="info sale">
+                                        <span>Sale</span>
+                                    </div>
+                                </div>
+                                <div class="title text-center">
+                                    <p>ORANGE AMARYLLIS</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Add to cart</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list greens" id="6a" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/card-sarmashiq.jpeg" title="Sweet Alyssum" alt="Product 7">
+                                </div>
+                                <div class="title text-center">
+                                    <p>SUMMER SAVORY</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Add to cart</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/TWO TULIPS.jpeg" title="Sweet Alyssum" alt="Product 7">
+                                </div>
+                                <div class="title text-center">
+                                    <p>PINK FLOWER TREE</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Select options</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$180</span>
+                                        <span>-</span>
+                                        <span class="productTotalPrice">$350</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/card-kaktus-img.jpeg" title="Scarlet Sage" alt="Product 5">
+                                    <div class="info new">
+                                        <span>Sale</span>
+                                    </div>
+                                </div>
+                                <div class="title text-center">
+                                    <p>SCHEFFLERA</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Add to cart</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list cactuses" id="7a" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/card-cactus-dib.jpeg" title="Rock Soapwort" alt="Product 6">
+                                </div>
+                                <div class="title text-center">
+                                    <p>ROCK SOAPWORT</p>
+                                    <div class="add-cart">
+                                        <p>View products</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="Products-Images/WILD-CACTUS.jpeg" title="Scarlet Sage" alt="Product 5">
+                                    <div class="info sale">
+                                        <span>Sale</span>
+                                    </div>
+                                </div>
+                                <div class="title text-center">
+                                    <p>WILD CACTUS</p>
+                                    <div class="add-cart">
+                                        <p class="addBasket">Add to cart</p>
+                                    </div>
+                                    <div class="price">
+                                        <span><del>$259</del></span>
+                                        <span>$</span>
+                                        <span class="productTotalPrice">159</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12">
+                            <div class="card">
+                                <div class="image">
+                                    <img class="third_img" src="Products-Images/ordinary cactus.jpeg" title="Sweet Alyssum" alt="Product 3">
+                                    <div class="info">
+                                        <span>Sold</span>
+                                    </div>
+                                </div>
+                                <div class="title text-center">
+                                    <p>CACTUS IN ORANGE</p>
+                                    <div class="add-cart">
+                                        <p>Read more</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>$</span>
+                                        <span class="productTotalPrice">259</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
     </main>
    
-<script src="script.js"></script>
+ <script src="script.js"></script>
  </body>
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="./vegas/vegas.min.js"></script>
@@ -698,4 +1197,5 @@
             ]
         });
     </script>
+    
 </html>

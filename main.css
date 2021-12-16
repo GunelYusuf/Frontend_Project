@@ -82,9 +82,11 @@ float: right;
  }
  .products-navbar ul li a{
      transition: all 0.2s linear;
+    
  }
  .products-navbar ul li a:hover{
-     color: #f34f3f;
+     cursor: pointer !important;
+     color: #f34f3f !important;
  }
 .filter{
     position: relative;
@@ -148,25 +150,25 @@ float: right;
 #allProducts{
      padding: 10px 0 50px 0;
 }
-.same-product .card{
+.product-list .card{
     cursor: pointer;
     border: none; 
 }
-.same-product .card:hover .image img{
+.product-list .card:hover .image img{
     transform: scale(1.05) translateZ(0);
 }
-.same-product .card:hover .add-cart{
+.product-list .card:hover .add-cart{
       transform: translateX(-50%) !important;
       opacity: 1 !important;
 }
-.same-product .card:hover .price{
+.product-list .card:hover .price{
      transform: translateX(60px);
      opacity: 0;
 }
- .same-product .card .image{
+ .product-list .card .image{
       overflow: hidden;
 }
-.same-product .card .image img{
+.product-list .card .image img{
     width: 100%;
     transition: transform .2s ease-out;
     transform: scale(1) translateZ(0);
