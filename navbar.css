@@ -71,13 +71,13 @@ header .container .row .navbar .close i {
   color: #f34f3f;
   font-size: 25px;
 }
-/* header .container .row .sidebar .close {
+header .container .row .sidebar .close {
   position: absolute;
   top: 15px;
   right: 15px;
   color: white;
   cursor: pointer;
-} */
+}
 header .container .row .navbar .navbar-list ul {
   padding: 40px;
   list-style: none;

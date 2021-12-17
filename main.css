@@ -346,3 +346,40 @@ float: right;
     top: 48px !important;
   }
 }
+ #expertArea{
+ padding: 60px 0 120px;
+}
+
+ #expertArea .container .text {
+  padding: 50px 0;
+}
+#expertArea .container .text h2 {
+  margin-right: 90px;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  color: #0e0e0e;
+  font-weight: 400;
+}
+
+ #expertArea .container .text p {
+   margin-right: 90px;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  color: #6D6A6A;
+  line-height: 29px;
+}
+
+.expert .content h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+ .expert .content span {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #AFAFAF;
+}
