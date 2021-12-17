@@ -71,12 +71,12 @@ header .container .row .navbar .close i {
   color: #f34f3f;
   font-size: 25px;
 }
-header .container .row .sidebar .close {
+header .container .row .navbar .close {
+  color: white;
+  cursor: pointer;
   position: absolute;
   top: 15px;
   right: 15px;
-  color: white;
-  cursor: pointer;
 }
 header .container .row .navbar .navbar-list ul {
   padding: 40px;
@@ -90,6 +90,16 @@ header .container .row .navbar .navbar-list ul li i {
   color: #1b1b1b;
   padding-left: 10px;
 }
+header .container .row .navbar .navbar-list ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+ }
+
 
 header .container .row .navbar .navbar-list ul li div {
   display: none;
@@ -155,11 +165,11 @@ header .container .row nav ul li.home a {
 }
 
 header .container .row nav ul li.home:hover .sub_home {
-  z-index: 9;
-  visibility: visible;
   height: 300px;
   opacity: 1;
   overflow: visible;
+  z-index: 9;
+  visibility: visible;
 }
 
 header .container .row nav ul li.home .sub_home {
@@ -616,31 +626,6 @@ header .container .row nav ul li.elements .sub_elements ul li.typography .sub_ty
 }
 header .container .row nav ul li.elements .sub_elements ul li.typography .sub_typography ul li a::after {
   width: 0;
-}
-#main_part_basket {
-  padding: 110px 0 0 0;
-}
-
-#main_part_basket .container .title p {
-  font-size: 25px;
-  line-height: 1.5em;
-  color: #1b1b1b;
-  font-family: "Lora", serif;
-}
-
-#main_part_basket .container .title button.add_to_card {
-  background-color: #f34f3f;
-  border: 1px solid transparent;
-  padding: 13px 32px;
-}
-
-#main_part_basket .container .title button.add_to_card a,#back_to_home .container .row button.add_to_card a,header .container .row .navbar .navbar_list ul li a{
-  color: #ffffff;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: .1em;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 .search-basket {
   padding: 29px 0px;

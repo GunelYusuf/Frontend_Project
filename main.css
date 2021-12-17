@@ -50,20 +50,20 @@
     transition: none 0s ease 0s;
     margin-left: 180px;
 }
-.fa-arrow-left {
+ #slider .fa-arrow-left {
 position: absolute;
 top: 50%;
 left:20px;
 float: left;
 }
-.fa-arrow-right
+ #slider .fa-arrow-right
 {
 position: absolute;
 top: 50%;
 left:97%;
 float: right;
 }
-.fal{
+ #slider .fal{
     transform: scale(1.5,1); 
  }
 
@@ -325,12 +325,6 @@ float: right;
   #video .content {
     margin-top: 40px;
   }
-  #p_tab_menu .menus .menu {
-    padding: 20px !important;
-  }
-  #third_tabMenu .menu {
-    padding: 20px 0px !important;
-  }
 }
 @media only screen and (max-width: 820px) {
   #products-card .productAllNav .products-navbar h6 {
@@ -509,29 +503,6 @@ float: right;
   margin: 0 auto;
 }
 
-#florist-slider1 .container .row .slider .slick-prev {
-  left: -100px;
-}
-
-#florist-slider1 .container .row .slider .slick-prev::before {
-  font-size: 40px;
-  color: gray;
-}
-
-#florist-slider1 .container .row .slider .slick-next {
-  right: -100px;
-}
-
-#florist-slider1 .container .row .slider .slick-next::before {
-  font-size: 40px;
-  color: gray;
-}
-
-#florist-slider1 .container .row .slider .draggable {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
 #florist-slider1 .container .row .slider .item {
   width: 100%;
 }
@@ -567,53 +538,24 @@ float: right;
   text-transform: uppercase;
 }
 
-#florist-slider2 {
-  padding: 0 0 70px 0;
+#florist-slider1 .container .row .arrows .fa-arrow-left {
+bottom: 15%;
+float: left;
+left:30%;
+position:absolute;
+cursor:pointer;
 }
-
-#florist-slider2 .container .row .cards {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
-#florist-slider2 .container .row .cards .draggable {
-  width: 100%;
-}
-
-#florist-slider2 .container .row .cards .slick-prev {
-  display: none !important;
-}
-
-#florist-slider2 .container .row .cards .slick-next {
-  display: none !important;
-}
-
-#florist-slider2 .container .row .cards .card {
+#florist-slider1 .container .row .arrows .fa-arrow-right
+{ 
+  position:absolute;
+  bottom: 15%;
+  right: 30%;
+  float: right;
   cursor: pointer;
-  border: none;
-  height: 340px;
-  position: relative;
 }
-
-#florist-slider2 .container .row .cards .card:hover .image img {
-    transform: scale(1.05) translateZ(0);
-}
-
-#florist-slider2 .container .row .cards .card .image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#florist-slider2 .container .row .cards .card .image img {
-  width: 100%;
-  height: 100%;
-  transform: scale(1) translateZ(0);
-  transition: transform .2s ease-out;
+  #florist-slider1 .container .row .arrows .fal{
+    transform: scale(1.5,1); 
  }
-
- 
 footer {
   background: #fefaf3;
   padding: 80px 0 30px 0;

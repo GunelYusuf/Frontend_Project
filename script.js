@@ -18,3 +18,43 @@
             }
             
         });
+
+let arrowLeft=document.getElementById('arrowLeft');
+let arrowRight=document.getElementById('arrowRight');
+let Anna=document.querySelector('.Anna');
+let Jasmine=document.querySelector('.Jasmine');
+let Count=0;
+setInterval(function(){
+    Count++;
+  if(Count<=1){
+     Jasmine.style.display='block';
+     Anna.style.display='none';
+  }else{
+    Count=0;
+    Anna.style.display='block';
+    Jasmine.style.display='none';
+  }
+}, 3000);
+arrowLeft.onclick=()=>{
+   Count++;
+  if(Count<=1){
+     Jasmine.style.display='block';
+     Anna.style.display='none';
+  }else{
+    Count=0;
+    Anna.style.display='block';
+    Jasmine.style.display='none';
+  }
+}
+arrowRight.onclick=()=>{
+   Count++;
+  if(Count<=1){
+     Jasmine.style.display='block';
+     Anna.style.display='none';
+  }else{
+    Count=0;
+    Anna.style.display='block';
+    Jasmine.style.display='none';
+  }
+}
+
