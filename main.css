@@ -163,6 +163,11 @@ float: right;
     cursor: pointer;
     border: none; 
 }
+.product-list .card .image img{
+    width: 100%;
+    transition: transform .2s ease-out;
+    transform: scale(1) translateZ(0);
+}
 .product-list .card:hover .image img{
     transform: scale(1.05) translateZ(0);
 }
@@ -177,11 +182,7 @@ float: right;
  .product-list .card .image{
       overflow: hidden;
 }
-.product-list .card .image img{
-    width: 100%;
-    transition: transform .2s ease-out;
-    transform: scale(1) translateZ(0);
-}
+
 .card .image .info{
     z-index: 9999;
     position: absolute;
@@ -238,7 +239,7 @@ float: right;
   transform: translateX(-100%);
   transition: all .4s ease;
 }
- .card .title .add_to_cart p {
+ .card .title .add-cart p {
   font-weight: normal;
   color: #AFAFAF;
 }
@@ -383,3 +384,119 @@ float: right;
   font-family: "Montserrat", sans-serif;
   color: #AFAFAF;
 }
+
+#join{
+  background-image: url("./Join_img/JoinGirls.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+}
+
+ .join-us{
+  padding: 150px 0 180px 0;
+}
+
+.join-us .title h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.4em;
+  color: #ffffff;
+}
+
+.searchArea .search-input input {
+  color: #959595;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+  width: 330px;
+  border: none;
+}
+ .join-us .searchArea .search-button button {
+  padding: 15px 30px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f34f3f;
+  border: none;
+}
+
+#fromOurBlog {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+
+#fromOurBlog .container .blogTitle {
+  padding: 50px 0;
+}
+
+#fromOurBlog .container .blogTitle h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 37px;
+  color: #0e0e0e;
+  font-weight: 400;
+}
+
+#fromOurBlog .container .blogTitle p {
+  font-family: "Lora", serif;
+  font-size: 15px;
+  color:#6d6a6a;
+  line-height: 29px;
+  text-align: center;
+}
+
+#fromOurBlog .container .blog-cards .row .b-card .img {
+  overflow: hidden;
+  position: relative;
+}
+
+#fromOurBlog .container .blog-cards .row .b-card .img:hover a img {
+    transform: scale(1.05) translateZ(0);
+}
+
+#fromOurBlog .container .blog-cards .row .b-card .img a img {
+  width: 100%;
+  transform: scale(1) translateZ(0);
+  transition: transform 0.3s ease;
+}
+
+#fromOurBlog .container .blog-cards .row .b-card .img .date {
+  background: #ffffff;
+  padding: 5px 17px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#fromOurBlog .container .blog-cards .row .b-card .img .date a {
+  vertical-align: middle;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 10px;
+}
+
+#fromOurBlog .container .blog-cards .b-card .img .date a:hover {
+  color: #f34f3f;
+  transition: all 0.2 ease-out;
+}
+
+#fromOurBlog .container .blog-cards .b-card .content h5 a {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #0e0e0e;
+  line-height: 1.360em;
+  font-weight: 400;
+}
+
+#fromOurBlog.container .blog-cards .b-card .content p {
+  font-family: "Lora", serif;
+  line-height: 1.6em;
+  font-size: 15px;
+  color: #6D6A6A;
+}
+
