@@ -1,0 +1,303 @@
+main .container {
+  width: 90%;
+}
+
+main hr {
+  opacity: 0.5;
+}
+
+main {
+  background: #FAFAF9;
+  padding: 80px 0;
+}
+
+main #product-list-title .container .title h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+main #product-list-title .container .title p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #6D6A6A;
+}
+#orangeAmaryllis{
+  padding: 100px 0;
+}
+
+#orangeAmaryllis .container .orange-image .mini-images {
+  margin-right: 30px;
+}
+
+#orangeAmaryllis .container .orange-image .mini-images  .image {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 110px;
+}
+
+#orangeAmaryllis .container .orange-image  .mini-images .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#orangeAmaryllis .container .orange-image  .big-image .image img {
+  width: 100%;
+  height: 501px;
+}
+
+#orangeAmaryllis .container .content {
+  padding: 0 25px;
+}
+
+#orangeAmaryllis .container .content h2 {
+  color: #1b1b1b;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.447em;
+}
+
+#orangeAmaryllis .container .content span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #AFAFAF;
+}
+
+#orangeAmaryllis .container .content p {
+  margin-top: 20px;
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+#orangeAmaryllis .container .content .quantityAdd {
+  margin: 30px 0;
+}
+
+#orangeAmaryllis .container .content .quantityAdd  .quantity {
+  border: 1px solid #eee;
+}
+
+#orangeAmaryllis .container .content .quantityAdd  .quantity span {
+  font-size: 13px;
+  padding: 18px 22px;
+}
+
+#orangeAmaryllis .container .content .quantityAdd .quantity .quantity-number {
+  padding: 11px;
+}
+
+#orangeAmaryllis .container .content .quantityAdd  .quantity .quantity-number i {
+  padding: 8px;
+  color: #AFAFAF;
+}
+
+#orangeAmaryllis .container .content .quantityAdd .quantity .quantity-number span {
+  font-size: 15px;
+  padding: 7px;
+}
+
+#orangeAmaryllis .container .content .quantityAdd .add-to-cart {
+  border: 5px solid black;
+  background: #0e0e0e;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  letter-spacing: .1em;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#orangeAmaryllis .container .content .product_info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+ #orangeAmaryllis .container .content .product_info p span {
+  color: #6D6A6A;
+  font-size: 12px;
+}
+
+#related-products{
+     padding: 10px 0 50px 0;
+}
+#related-products h2{
+  color: #1b1b1b;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: .1em;
+  margin-bottom: 30px;
+}
+
+.product-list .card{
+    cursor: pointer;
+    border: none; 
+}
+.product-list .card .image img{
+    width: 100%;
+    transition: transform .2s ease-out;
+    transform: scale(1) translateZ(0);
+}
+.product-list .card:hover .image img{
+    transform: scale(1.05) translateZ(0);
+}
+.product-list .card:hover .add-cart{
+      transform: translateX(-50%) !important;
+      opacity: 1 !important;
+}
+.product-list .card:hover .price{
+     transform: translateX(60px);
+     opacity: 0;
+}
+ .product-list .card .image{
+      overflow: hidden;
+}
+
+.card .image .info{
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 5px 13px;
+    letter-spacing: 1px;
+    background: #000;
+} 
+.card .image .info.sale {
+  background: #ffffff;
+}
+.card .image .info.sale span {
+  color: #1b1b1b;
+}
+.card .image .info.new {
+  background: #f34f3f;
+}
+.card .image .info.new span {
+  color: #ffffff;
+}
+.card .image .info span {
+  font-size: 17px -1;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+.card .title {
+  position: relative;
+  padding: 20px 0;
+}
+.card .title p,.card .title span {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+ .card .title .price {
+  display: inline-block;
+  position: relative;
+  transition: all .3s ease;
+}
+.card .title .price span {
+  font-weight: normal;
+  color: #AFAFAF;
+}
+.card .title .add-cart {
+  display: inline-block;
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .4s ease;
+}
+ .card .title .add-cart p {
+  font-weight: normal;
+  color: #AFAFAF;
+}
+ .card .title .add-cart p:hover {
+  color: #f34f3f;
+}
+footer {
+  background: #fefaf3;
+  padding: 80px 0 30px 0;
+}
+
+.footer-item  h6 {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.footer-item ul {
+  list-style-type: none;
+}
+
+ .footer-item ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+
+ .footer-item ul li a:hover {
+  color: #f34f3f;
+  transition: all 0.2s ease-out;
+}
+
+ .copyright {
+  font-family: "Montserrat", sans-serif;
+}
+
+ .copyright-title span {
+  font-size: 12px;
+  color: #AFAFAF;
+}
+
+.copyright-title span a {
+  color: #6D6A6A;
+}
+
+.copyright-title span a:hover {
+  color: #f34f3f;
+  transition: all 0.2s ease-out;
+}
+
+ .social-medias a {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #AFAFAF;
+  font-size: 10px;
+}
+
+.social-medias a:first-child {
+  margin-right: 20px;
+}
+
+.social-medias a:hover {
+  color: #f34f3f;
+  transition: all 0.2s ease-out;
+}
+@media only screen and (max-width: 996px) {
+  header nav, header .search-basket {
+    display: none;
+  }
+  header.main .logo img {
+    width: 170% !important;
+  }
+  footer .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #video .content {
+    margin-top: 40px;
+  }
+}
