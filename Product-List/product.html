@@ -540,6 +540,127 @@
             </div>
             </div>
         </section>
+        <section id="product-tab-menu">
+        <div class="container">
+                <div class="row px-3">
+                    <div class="col-12">
+                        <div class="menus d-flex">
+                            <div class="menu selected" data-id="1a">
+                                Description
+                            </div>
+                            <div class="menu" data-id="2a">
+                                Additional information
+                            </div>
+                            <div class="menu" data-id="3a">
+                                Reviews (2)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                       <div class="contents">
+                            <div class="content" id="1a">
+                                <h3>The power of flowers</h3>
+                                <p class="m-0">
+                                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                                    nulla
+                                    ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                                    augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                    tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+                                    sem
+                                    neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                    Maecenas nec odio et ante
+                                </p>
+                            </div>
+                            <div class="content d-none" id="2a">
+                                <p class="m-0"><strong>Weight:</strong> <span>1 kg</span></p>
+                                <p class="m-0"><strong>Dimensions:</strong> <span>30 x 30 x 50 cm</span></p>
+                            </div>
+                            <div class="content d-none" id="3a">
+                                <div class="reviews">
+                                    <h2>Reviews</h2>
+                                    <div class="comments">
+                                        <div class="comment-area mb-3 d-flex">
+                                            <div class="col-lg-1 col-md-2 col-3 px-2">
+                                                <div class="image">
+                                                    <img src="/Products-Images/product-expert-imG1.png" alt="Commenter">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-11 col-md-10 col-9">
+                                                <div class="comment">
+                                                    <p class="mb-2">
+                                                        <strong>Joshua Garcia </strong>
+                                                        <span>27.04.2018</span>
+                                                    </p>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                                        commodo ligula eget dolor. Aenean massa. Cum sociis Theme
+                                                        natoque
+                                                        penatibus et magnis dis parturient montes, nascetur ridiculus
+                                                        mus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-area d-flex">
+                                            <div class="col-lg-1 col-md-2 col-3 px-2">
+                                                <div class="image">
+                                                    <img src="/Products-Images/product-expert-img2.png" alt="Commenter">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-11 col-md-10 col-9">
+                                                <div class="comment">
+                                                    <p class="mb-2">
+                                                        <strong>Joan Stanley</strong>
+                                                        <span>27.04.2018</span>
+                                                    </p>
+                                                    <p>
+                                                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                                                        sem
+                                                        quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                                                        quam nunc, blandit vel, luctus pulvinar, hendrerit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_reviews">
+                                    <h2>Add a review</h2>
+                                    <div class="review">
+                                        <p>Your email address will not be published. Required fields are marked
+                                            <sup>*</sup>
+                                        </p>
+                                        <form action="#" class="form-group">
+                                            <div>
+                                                <label>Your review <sup>*</sup></label><br>
+                                                <textarea name="your_review" id="your_review" cols="45" rows="8" aria-required="true"
+                                                    required></textarea>
+                                            </div>
+                                            <div>
+                                                <label>Name<sup>*</sup></label>
+                                                <input class="form-control" type="text" id="author" name="author" size="30" aria-required="true"
+                                                    required>
+                                            </div>
+                                            <div>
+                                                <label>Email<sup>*</sup></label>
+                                                <input class="form-control" type="email" id="email" name="email" size="30" aria-required="true"
+                                                    required>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" value="yes" id="" name="">
+                                            </div>
+                                            <p>Save my name, email, and website in this browser for the next time I
+                                                comment.</p>
+                                            <input class="button" type="submit" name="submit" id="submit" value="submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        </div>
+     </section>
         <section id="related-products">
             <div class="container p-0">
                 <div class="row w-100 m-0 p-0">
@@ -701,6 +822,14 @@
             </div>
         </footer>
     </main>  
-       
+       <script>
+    
+            $(".menus .menu").click(function (e) {
+                    $("div [data-id]").removeClass("selected");
+                    $("div [data-id='" + $(this).attr("class").replace("menu", "") + "']").addClass("selected");
+                    e.preventDefault();
+                });
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

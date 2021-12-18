@@ -301,3 +301,162 @@ footer {
     margin-top: 40px;
   }
 }
+
+#product-tab-menu {
+  padding: 100px 0;
+}
+
+#product-tab-menu .container .row .menus {
+  text-transform: uppercase;
+}
+
+#product-tab-menu .container .row .menus .menu {
+  border: 1px solid #eee;
+  border-bottom: none;
+  letter-spacing: 0.9px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #1b1b1b;
+  padding: 20px 45px;
+  cursor: pointer;
+}
+
+#product-tab-menu .container .row .menus .menu:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+#product-tab-menu .container .row .menus .menu.selected {
+  color: #ffffff;
+  background: #f34f3f;
+}
+
+#product-tab-menu .container .row .contents {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#product-tab-menu .container .row .contents .content {
+  padding: 75px 5px 75px 0px;
+}
+
+#product-tab-menu .container .row .contents .content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #1b1b1b;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+#product-tab-menu .container .row .contents .content p {
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#product-tab-menu .container .row .contents .content p strong {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+#product-tab-menu .container .row .contents .content p span {
+  color: #6D6A6A;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+#product-tab-menu .container .row .contents .content .reviews h2 {
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #1b1b1b;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .image {
+  padding: 6px 0;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .image img {
+  width: 100%;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .comment p:first-child {
+  font-family: "Montserrat", sans-serif;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .comment p:first-child strong {
+  color: #1b1b1b;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .comment p:first-child span {
+  font-size: 10px;
+  color: #AFAFAF;
+  letter-spacing: .15em;
+}
+
+#product-tab-menu .container .row .contents .content .reviews .comments .comment-area .comment p:first-child::nth-child(2) {
+  font-family: "Lora", serif;
+  font-size: 15px;
+  color: #6D6A6A;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews {
+  padding: 40px 0;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #1b1b1b;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews .review p {
+  margin-bottom: 5px;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews .review form div label {
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews .review form div textarea {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews .review form div input {
+  border: 1px solid #eee;
+  border-radius: 0px;
+  padding: 30px;
+}
+
+#product-tab-menu .container .row .contents .content .add_reviews .review form input.button {
+  color: #ffffff;
+  background-color: #f34f3f;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.833em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  border: none;
+  padding: 15px 45px;
+  margin-top: 20px;
+}
