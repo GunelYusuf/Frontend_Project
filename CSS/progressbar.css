@@ -1,0 +1,109 @@
+#progressbar-1 {
+  padding: 100px 0;
+}
+
+#progressbar-1 .container .row .progressbars {
+  margin-bottom: 50px;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar {
+  margin-bottom: 15px;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar h6 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #1b1b1b;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar h6 .percent span {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#progressbar-1 .container .row  .progressbars .progressbar 
+.progress-container  {
+  background-color: #ddd;
+  display: block;
+  height: 3px;
+  overflow: hidden;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar 
+.progress-container .ownprog{
+  height: 3px;
+  background-color: #f34f3f;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar 
+.progress-container  .progress-grow {
+  width: 95%;
+  animation: progress-grow  3s ease;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar 
+.progress-container  .progress-water {
+  width: 80%;
+  animation: progress-water  3s ease;
+}
+
+#progressbar-1 .container .row .progressbars .progressbar 
+.progress-container  .progress-furt {
+  width: 55%;
+  animation: progress-furt  3s ease;
+}
+
+@-webkit-keyframes progress-grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes progress-grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes progress-water {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progress-water {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes progress-furt {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progress-furt {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
