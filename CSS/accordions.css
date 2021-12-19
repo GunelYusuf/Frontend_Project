@@ -21,7 +21,7 @@ main #accordions-title .container .title h1 {
   padding: 100px 30px;
 }
 
-.paragraphs .paragraph:first-child .title {
+#accordion-1 .paragraphs .paragraph:first-child .title {
   background: #f34f3f;
 }
 
@@ -67,6 +67,53 @@ main #accordions-title .container .title h1 {
 }
 
 
+#accordion-2 .container {
+  padding: 100px 30px;
+}
+
+#accordion-2 .paragraphs .paragraph:first-child .title i,#accordion-2 .paragraphs .paragraph:first-child .title h6 {
+   color: #f34f3f !important;
+}
+
+#accordion-2 .container .row .paragraphs .paragraph:first-child .content {
+  display: block;
+}
+
+#accordion-2 .container .row .paragraphs .paragraph  .title {
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 13px 20px 13px 0px;
+}
+
+#accordion-2  .container .row .paragraphs .paragraph  .title .icon {
+  padding: 0px 20px;
+}
+
+#accordion-2  .container .row .paragraphs .paragraph  .title .accord-head h6 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#accordion-2 .container .row .paragraphs .paragraph  .title h6,#accordion-2  .container .row .paragraphs .paragraph  .title i {
+  color: #1b1b1b;
+  font-size: 12px;
+}
+
+#accordion-2 .container .row .paragraphs .paragraph  .content {
+  padding: 35px 0;
+  display: none;
+}
+
+#accordion-2 .container .row .paragraphs .paragraph .content p {
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  line-height: 25px;
+  font-size: 14.8px;
+}
 
 footer {
   background: #fefaf3;
