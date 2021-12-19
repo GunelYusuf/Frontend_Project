@@ -545,7 +545,7 @@ header .container .row nav ul li.elements .sub_elements ul li.infographic .sub_i
   height: 45px;
 }
 
-.sub_elements ul li.infographic .sub_infographic ul li:hover a::after {
+header .container .row nav ul li.elements .sub_elements ul li.infographic .sub_infographic ul li:hover a::after  {
   width: 100%;
 }
 header .container .row nav ul li.elements .sub_elements ul li.infographic .sub_infographic ul li a::after {
