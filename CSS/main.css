@@ -1,71 +1,38 @@
-.title h2{
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 103px;
-    max-height: 103px;
-    opacity: 1;
-    z-index: 4;
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 400px;
-    color: black;
-    font-family: "Playfair Display";
-    transition: none 0s ease 0s;
-    margin-top: 110px;
-    margin-left: 180px;
+
+#bigSlider .title {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 200px;
 }
-.title span{
-    color: red;
-    transition: none 0s ease 0s;
-    text-align: inherit;
-    line-height: 51px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-size: 41px;
+
+#bigSlider .title h2 {
+  padding: 0 90px 15px 0;
+  color: #0e0e0e;
+  font-family: "Playfair Display", serif;
+  font-size: 41px;
+  line-height: 51px;
+  font-weight: 400;
 }
-.title-text p{
-    margin-top: 20px;
-    margin-left: 180px;
-    z-index: 6;
-    min-width: 429px;
-    max-width: 429px;
-    white-space: normal;
-    font-size: 17px;
-    line-height: 29px;
-    font-weight: 400;
-    color: rgb(109, 106, 106);
-    letter-spacing: 0px;
-    font-family: Lora;
-    visibility: inherit;
-    transition: none 0s ease 0s;
-    min-height: 89px;
-    max-height: 89px;
-    opacity: 1;
+
+#bigSlider .title h2 span {
+  color: #f34f3f;
 }
-.title-text img{
-    font-weight: 400;
-    font-size: 15px;
-    z-index: 7;
-    visibility: inherit;
-    transition: none 0s ease 0s;
-    margin-left: 180px;
+
+#bigSlider .title p {
+  padding: 0 10px 10px 0;
+  color: #6D6A6A;
+  font-size: 17px;
+  font-family: "Lora", serif;
+  line-height: 29px;
+  font-weight: 400;
 }
- #slider .fa-arrow-left {
-position: absolute;
-top: 50%;
-left:20px;
-float: left;
+
+#bigSlider .title img {
+  width: 197px;
+  height: 56px;
 }
- #slider .fa-arrow-right
-{
-position: absolute;
-top: 50%;
-left:97%;
-float: right;
-}
- #slider .fal{
-    transform: scale(1.5,1); 
- }
+
 
  #products-card{
     padding-top: 60px;
@@ -310,38 +277,7 @@ float: right;
   margin: 0 0 15px 15px;
 }
 
-@media only screen and (max-width: 996px) {
-  header nav, header .search-basket {
-    display: none;
-  }
-  header.main .logo img {
-    width: 170% !important;
-  }
-  footer .copyright {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  #video .content {
-    margin-top: 40px;
-  }
-}
-@media only screen and (max-width: 820px) {
-  #products-card .productAllNav .products-navbar h6 {
-    display: inline-block !important;
-  }
-  #products-card .productAllNav .products-navbar ul {
-    display: none;
-    width: 25%;
-  }
-  #products-card .productAllNav .filter {
-    display: flex;
-  }
-  #products-card .productAllNav .filter .sub-filter {
-    top: 48px !important;
-  }
-}
- #expertArea{
+#expertArea{
  padding: 60px 0 120px;
 }
 
@@ -617,4 +553,171 @@ footer {
 .social-medias a:hover {
   color: #f34f3f;
   transition: all 0.2s ease-out;
+}
+
+
+@media only screen and (max-width: 996px) {
+  header nav, header .search-basket {
+    display: none;
+  }
+  header.main .logo img {
+    width: 170% !important;
+  }
+  footer .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #video .content {
+    margin-top: 40px;
+  }
+  #product-tab-menu .menus .menu {
+    padding: 20px !important;
+  }
+  #thirdTab .menu {
+    padding: 20px 0px !important;
+  }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+  #orangeAmaryllis .content .quantityAdd{
+    width: 50%;
+    display: flex !important;
+  }
+} 
+  
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+   #orangeAmaryllis .content .quantityAdd {
+    width: 100%;
+  }
+   #orangeAmaryllis .content .quantity span {
+    padding: 18px 0px 18px 10px !important;
+  }
+  #product-tab-menu .menus .menu {
+    padding: 20px 3px !important;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #products-card .productAllNav .products-navbar h6 {
+    display: inline-block !important;
+  }
+  #products-card .productAllNav .products-navbar ul {
+    display: none;
+    width: 25%;
+  }
+  #products-card .productAllNav .filter {
+    display: flex;
+  }
+  #products-card .productAllNav .filter .sub-filter {
+    top: 48px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #product-tab-menu .menus .menu {
+    text-align: center;
+  }
+  #bigSlider .title {
+    width: 70% !important;
+  } 
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1040px) {
+  #bigSlider .title {
+    position: absolute;
+    top: 15% !important;
+    left: 100px !important;
+  }
+  #bigSlider .title h2 {
+    padding: 0 0 10px 0 !important;
+  }
+  #bigSlider .title p {
+    padding: 0 0 10px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1040px) and (min-width: 890px) {
+  #bigSlider .title {
+    position: absolute;
+    top: 15% !important;
+    left: 100px !important;
+  }
+  #bigSlider .title h2 {
+    padding: 0 0px 10px 0 !important;
+  }
+  #bigSlider .title p {
+    padding: 0 0px 10px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #bigSlider .title {
+    position: absolute;
+    top: 15% !important;
+    left: 100px !important;
+  }
+  #bigSlider .title h2 {
+    padding: 0 0px 10px 0 !important;
+  }
+ #bigSlider .title p {
+    padding: 0 0px 10px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #firstTab .menus .menu {
+    padding: 20px 22px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer .footer-item{
+      margin-left: 50px;
+  }
+   .fa-bars{
+   position:relative;
+   z-index: 3;
+   bottom: 57px;
+   float: left;
+  }
+ #bigSlider .title{
+    position: absolute;
+    top: 15% !important;
+    left: 100px !important;
+    width: 60%;
+ }
+  #bigSlider .title h2 {
+    padding: 0 0px 10px 0 !important;
+  }
+ #bigSlider .title p {
+    padding: 0 0px 10px 0 !important;
+  }
+  #shop-products .shopProduct:hover .image-hover {
+    padding: 200px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 996px) {
+  #orangeAmaryllis .content .quantityAdd {
+    display: block !important;
+  }
+  header.main .logo img {
+    width: 130% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+ #orangeAmaryllis .content .add-cart {
+    padding: 15px 20px !important;
+  }
+  header.main nav, header.main .search-basket {
+    display: none;
+  }
+  header.main .col-9 {
+    display: block !important;
+  }
+  header.main .navbar-icon {
+    display: block !important;
+  }
 }
