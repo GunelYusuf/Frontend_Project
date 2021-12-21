@@ -14,17 +14,18 @@
     <header class="head">
         <div class="container">
             <div class="row">
+    
                 <div class="col-3">
                     <div class="logo">
                         <div class="img">
                             <a href="#" style="height: 25px">
                                 <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h2-logo-1.png"
-                                    style="width: 212px; height:25px;" alt="Fiorello Logo" />
+                                    style="width: 212px; height:25px;" alt="" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-9 d-none">
+                <div class="col-9 display-none">
                     <div class="navbar-icon">
                         <div class="icon">
                             <i class="fas fa-bars openSidebar"></i>
@@ -304,7 +305,7 @@
                                     </ul>
                                     <ul class="shop_types">
                                         <h4>Shop Types</h4>
-                                        <li><a href="productlist.html" target="_blank">Product List</a></li>
+                                        <li><a href="/Product-List/product.html" target="_blank">Product List</a></li>
                                         <li><a href="#">Without Sidebar</a></li>
                                         <li><a href="#">With Category Filter</a></li>
                                         <li><a href="#">With Ordering Filter</a></li>
@@ -388,8 +389,8 @@
                                             <i class="fas fa-chevron-left"></i><a href="#">Classic</a>
                                             <div class="sub_classic">
                                                 <ul>
-                                                    <li><a href="accordions.html" target="_blank">Accordions</a></li>
-                                                    <li><a href="tabs.html" target="_blank">Tabs</a></li>
+                                                    <li><a href="/accordions.html" target="_blank">Accordions</a></li>
+                                                    <li><a href="/tabs.html" target="_blank">Tabs</a></li>
                                                     <li><a href="#">Buttons</a></li>
                                                     <li><a href="#">Video Buttons</a></li>
                                                     <li><a href="#">Contact Form</a></li>
@@ -403,7 +404,7 @@
                                                     <li><a href="#">Blog Lists</a></li>
                                                     <li><a href="#">Counters</a></li>
                                                     <li><a href="#">Countdown</a></li>
-                                                    <li><a href="progressbar.html" target="_blank">Progress Bar</a></li>
+                                                    <li><a href="/progressbar.html" target="_blank">Progress Bar</a></li>
                                                     <li><a href="#">Pie Charts</a></li>
                                                 </ul>
                                             </div>
@@ -416,7 +417,7 @@
                                                     <li><a href="#">Testimonials</a></li>
                                                     <li><a href="#">Team</a></li>
                                                     <li><a href="#">Banner</a></li>
-                                                    <li><a href="shoplist.html" target="_blank">Shop List</a></li>
+                                                    <li><a href="/shop-list.html" target="_blank">Shop List</a></li>
                                                     <li><a href="#">Portfolio List</a></li>
                                                 </ul>
                                             </div>
@@ -448,18 +449,18 @@
                             <div class="search">
                                 <i class="fas fa-search"></i>
                                 <div class="searchArea">
-                                    <form action="#" class="d-flex">
+                                    <form class="d-flex">
                                         <input type="text" placeholder="Search">
                                         <button type="submit"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
                             </div>
                             <div class="basket">
-                                <a href="#" target="_blank"><i class="fas fa-shopping-bag"></i><sup
+                                <a href="basket.html" target="_blank"><i class="fas fa-shopping-bag"></i><sup
                                         id="productCount">0</sup></a>
                                 <span class="cart">Cart</span>
                                 <span>($</span>
-                                <span id="productTotalPrice">0</span>
+                                <span id="totalPrice">0</span>
                                 <span>)</span>
                             </div>
                         </div>
@@ -486,21 +487,21 @@
                         <div class="orange-image d-flex">
                             <div class="mini-images">
                                 <div class="image">
-                                    <img src="./Orange-img/orange1.jpeg" alt="Product image">
+                                    <img src="./Orange-img/orange1.jpeg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="./Orange-img/orange2.jpeg" alt="Product image">
+                                    <img src="./Orange-img/orange2.jpeg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="./Orange-img/orange3.jpeg" alt="Product image">
+                                    <img src="./Orange-img/orange3.jpeg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="./Orange-img/orange4.jpeg" alt="Product image">
+                                    <img src="./Orange-img/orange4.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="big-image">
                                 <div class="image">
-                                    <img src="./Orange-img/orangeBig.jpeg" alt="Product image">
+                                    <img src="./Orange-img/orangeBig.jpeg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -517,9 +518,9 @@
                                     <div class="quantity d-flex justify-content-between">
                                         <span>Quantity</span>
                                         <div class="quantity-number">
-                                            <i id="countersub" class="fas fa-caret-left"></i>
-                                            <span id="productcount" class="product_count">1</span>
-                                            <i id="counteradd" class="fas fa-caret-right"></i>
+                                            <i id="countminus" class="fas fa-caret-left"></i>
+                                            <span id="productcount" class="productCount">1</span>
+                                            <i id="countplus" class="fas fa-caret-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -529,7 +530,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="product_info">
+                            <div class="product-info">
                                 <p>SKU: <span>989873</span></p>
                                 <p>Categories: <span>Various, Exotic</span></p>
                                 <p>Tags: <span>Llilies, Orchids</span></p>
@@ -670,7 +671,7 @@
                             <div class="col-lg-3 col-md-6 col-xs-12">
                                 <div class="card">
                                     <div class="image">
-                                        <img class="third_img" src="../Products-Images/card-dibcek-img.jpeg" alt="">
+                                        <img src="../Products-Images/card-dibcek-img.jpeg" alt="">
                                         <div class="info">
                                             <span>Sold</span>
                                         </div>
@@ -682,7 +683,7 @@
                                         </div>
                                         <div class="price">
                                             <span>$</span>
-                                            <span class="productTotalPrice">259</span>
+                                            <span class="totalPrice">259</span>
                                         </div>
                                     </div>
                                 </div>
@@ -703,7 +704,7 @@
                                         <div class="price">
                                             <span><del>$259</del></span>
                                             <span>$</span>
-                                            <span class="productTotalPrice">159</span>
+                                            <span class="totalPrice">159</span>
                                         </div>
                                     </div>
                                 </div>
@@ -720,7 +721,7 @@
                                         </div>
                                         <div class="price">
                                             <span>$</span>
-                                            <span class="productTotalPrice">350</span>
+                                            <span class="totalPrice">350</span>
                                         </div>
                                     </div>
                                 </div>
@@ -740,7 +741,7 @@
                                         </div>
                                         <div class="price">
                                             <span>$</span>
-                                            <span class="productTotalPrice">259</span>
+                                            <span class="totalPrice">259</span>
                                         </div>
                                     </div>
                                 </div>
@@ -750,79 +751,80 @@
                 </div>
             </div>
         </section>
-        <footer>
-        <div class="container">
-                <div class="footer-items pb-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="footer-item pt-3">
-                                <h6>CUSTOMER SERVICE</h6>
-                                <ul class="p-0 mt-4">
-                                    <li class="pb-1"><a href="#">Help & Contact Us</a></li class="pb-1">
-                                    <li class="pb-1"><a href="#">Returns & Refunds</a></li>
-                                    <li class="pb-1"><a href="#">Online Stores</a></li>
-                                    <li class="pb-1"><a href="#">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="footer-item pt-3">
-                                <h6>COMPANY</h6>
-                                <ul class="p-0 mt-4">
-                                    <li class="pb-1"><a href="#">About Us</a></li class="pb-2">
-                                    <li class="pb-1"><a href="#">Blog</a></li>
-                                    <li class="pb-1"><a href="#">Order Tracking</a></li>
-                                    <li class="pb-1"><a href="#">FAQ Page</a></li>
-                                    <li class="pb-1"><a href="#">Contact Us</a></li>
-                                    <li class="pb-1"><a href="#">Login</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="footer-item pt-3">
-                                <h6>SOCIAL MEDIA</h6>
-                                <ul class="p-0 mt-4">
-                                    <li class="pb-1"><a href="#">Twitter</a></li class="pb-2">
-                                    <li class="pb-1"><a href="#">Instagram</a></li>
-                                    <li class="pb-1"><a href="#">Tumblr</a></li>
-                                    <li class="pb-1"><a href="#">Pinterest</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="footer-item pt-3">
-                                <h6>ARCHIVE</h6>
-                                <ul class="p-0 mt-4">
-                                    <li class="pb-1"><a href="#">Designer Shoes</a></li>
-                                    <li class="pb-1"><a href="#">Gallery</a></li>
-                                    <li class="pb-1"><a href="#">Pricing</a></li class="pb-2">
-                                    <li class="pb-1"><a href="#">Feature Index</a></li>
-                                    <li class="pb-1"><a href="#">Login</a></li>
-                                    <li class="pb-1"><a href="#">Help & Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="copyright pt-3 d-flex justify-content-between">
-                    <div class="copyright-title pb-3">
-                        <span>Powered by <a href="#">Mikado Themes</a> 2018</span>
-                    </div>
-                    <div class="img pb-3">
-                        <a href="#">
-                            <img src="../footer-img/visa-card.png" alt="">
-                        </a>
-                    </div>
-                    <div class="social-medias pb-3">
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                    </div>
-                </div>
-        </div>
-        </footer>
     </main>  
-       <script src="/JS/product.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-items pb-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item pt-3">
+                            <h6>CUSTOMER SERVICE</h6>
+                            <ul class="p-0 mt-4">
+                                <li class="pb-1"><a href="#">Help & Contact Us</a></li class="pb-1">
+                                <li class="pb-1"><a href="#">Returns & Refunds</a></li>
+                                <li class="pb-1"><a href="#">Online Stores</a></li>
+                                <li class="pb-1"><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item pt-3">
+                            <h6>COMPANY</h6>
+                            <ul class="p-0 mt-4">
+                                <li class="pb-1"><a href="#">About Us</a></li class="pb-2">
+                                <li class="pb-1"><a href="#">Blog</a></li>
+                                <li class="pb-1"><a href="#">Order Tracking</a></li>
+                                <li class="pb-1"><a href="#">FAQ Page</a></li>
+                                <li class="pb-1"><a href="#">Contact Us</a></li>
+                                <li class="pb-1"><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item pt-3">
+                            <h6>SOCIAL MEDIA</h6>
+                            <ul class="p-0 mt-4">
+                                <li class="pb-1"><a href="#">Twitter</a></li class="pb-2">
+                                <li class="pb-1"><a href="#">Instagram</a></li>
+                                <li class="pb-1"><a href="#">Tumblr</a></li>
+                                <li class="pb-1"><a href="#">Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item pt-3">
+                            <h6>ARCHIVE</h6>
+                            <ul class="p-0 mt-4">
+                                <li class="pb-1"><a href="#">Designer Shoes</a></li>
+                                <li class="pb-1"><a href="#">Gallery</a></li>
+                                <li class="pb-1"><a href="#">Pricing</a></li class="pb-2">
+                                <li class="pb-1"><a href="#">Feature Index</a></li>
+                                <li class="pb-1"><a href="#">Login</a></li>
+                                <li class="pb-1"><a href="#">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright pt-3 d-flex justify-content-between">
+                <div class="copyright-title pb-3">
+                    <span>Powered by <a href="#">Mikado Themes</a> 2018</span>
+                </div>
+                <div class="img pb-3">
+                    <a href="#">
+                        <img src="../footer-img/visa-card.png" alt="">
+                    </a>
+                </div>
+                <div class="social-medias pb-3">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="/JS/product.js"></script>
+<script src="/JS/navbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>

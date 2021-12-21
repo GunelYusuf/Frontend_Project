@@ -1,10 +1,10 @@
-let counteradd=document.getElementById('counteradd');
-let countersub=document.getElementById('countersub');
-counteradd.onclick=()=>{
+let countplus=document.getElementById('countplus');
+let countminus=document.getElementById('countminus');
+countplus.onclick=()=>{
 let countA= parseInt(document.getElementById('productcount').innerText);
 document.getElementById('productcount').innerText=countA+1;
            }
-countersub.onclick = () => {
+countminus.onclick = () => {
 let countA = parseInt(document.getElementById('productcount').innerText);
 if(countA==1){
 return;
