@@ -459,7 +459,7 @@
                                 </div>
                             </div>
                             <div class="basket">
-                                <a href="basket.html" target="_blank"><i class="fas fa-shopping-bag"></i><sup
+                                <a href="#" target="_blank"><i class="fas fa-shopping-bag"></i><sup
                                         id="productCount">0</sup></a>
                                 <span class="cart">Cart</span>
                                 <span>($</span>
@@ -1472,19 +1472,19 @@
    
    <script>
     
-        // $(document).ready(function () {
-        //         $('header.main .navbar .navbar-list ul li a').click(function () {
-        //             if ($(this).next().attr('class') == 'fas fa-caret-right') {
-        //                 $(this).next().removeClass('fa-caret-right');
-        //                 $(this).next().addClass('fa-caret-down');
-        //             }
-        //             else {
-        //                 $(this).next().removeClass('fa-caret-down');
-        //                 $(this).next().addClass('fa-caret-right');
-        //             }
-        //             $(this).next().next().slideToggle(800);
-        //         });
-        //     })
+        $(document).ready(function () {
+                $('header .navbar .navbar-list ul li a').click(function () {
+                    if ($(this).next().attr('class') == 'fas fa-caret-right') {
+                        $(this).next().removeClass('fa-caret-right');
+                        $(this).next().addClass('fa-caret-down');
+                    }
+                    else {
+                        $(this).next().removeClass('fa-caret-down');
+                        $(this).next().addClass('fa-caret-right');
+                    }
+                    $(this).next().next().slideToggle(500);
+                });
+            })
 
             let openSidebar = document.querySelector('.navbar-icon .icon .openSidebar');
             let close = document.querySelector('header .navbar .close')
@@ -1498,47 +1498,5 @@
             })
     </script> 
 
-    <!-- <script>
-        let addcart=document.querySelectorAll('.add-cart');
-        let productCount=document.getElementById('productCount')
-        // let addbasket=document.querySelectorAll('.addBasket');
-        // console.log(addbasket);
-        // console.log(addcart);
-
-        addcart.forEach(addbtn=> 
-        addbtn.onclick=function(e){
-            e.preventDefault();
-            let id =this.parentElement.parentElement.getAttribute('data-id');
-            let localStorageArray=JSON.parse(localStorage.getItem('basket'));
-            let existProduct=localStorageArray.find(g => g.id==id);
-             if(existProduct===undefined){
-                 localStorageArray.push({
-                     id:id,
-                     name:this.parentElement.firstElementChild.innerText,
-                     count:1,
-                     price:this.nextElementSibling.lastElementChild.innerText,
-                     src:this.parentElement.firstElementChild.firstElementChild.getAttribute('src')
-                 })
-             }else
-             {
-                  existProduct.count+=1;
-                  existProduct.price*=existProduct.count;
-             };
-             localStorage.setItem('basket',JSON.stringify(localStorageArray));
-             GetBasketCount();
-        });
-
-        function GetBasketCount() {
-            let localStorageArray=JSON.parse(localStorage.getItem('basket'));
-            document.getElementById('productCount').innerText=localStorageArray.length;
-        }
-        GetBasketCount();
-
-        function SetBasket() {
-            if(!localStorage.getItem('basket')){
-                localStorage.setItem('basket',JSON.stringify([]));
-            }
-        }
-    </script> -->
-    
+   
 </html>
