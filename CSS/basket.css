@@ -1,0 +1,25 @@
+main .container {
+  width: 90%;
+}
+
+main hr {
+  opacity: 0.4;
+}
+
+main #title_wrapper {
+  background: #FAFAF9;
+  padding: 80px 0;
+}
+
+main #title_wrapper .container .title h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+main #title_wrapper .container .title p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #6D6A6A;
+}
