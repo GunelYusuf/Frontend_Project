@@ -55,7 +55,7 @@ header .container .row .navbar {
   transition: all 0.4s;
   overflow-y: scroll;
   transition-timing-function: linear;
-  box-shadow: -10px -10px 8px #eee;
+  box-shadow: -5px -5px 8px #eee;
   transform: translate(340px);
   position: fixed;
   width: 330px;

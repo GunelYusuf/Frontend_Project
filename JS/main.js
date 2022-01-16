@@ -1,24 +1,3 @@
-  let tab=document.querySelectorAll('.tabmenu');
-           let allproducts=document.getElementById('1a');
-           let change;
-           tab.forEach(g => {
-              
-            g.onclick=()=>{
-               let dataId=g.getAttribute('data-id');
-               let product=document.getElementById(dataId);
-               if( dataId!='1a'){
-                    allproducts.style.display='none';
-               }
-               if(change){
-                   change.style.display='none';
-
-               }
-               product.style.display='block';
-               change=product;
-            }
-            
-        });
-
 let arrowLeft=document.getElementById('arrowLeft');
 let arrowRight=document.getElementById('arrowRight');
 let Anna=document.querySelector('.Anna');
@@ -58,3 +37,28 @@ arrowRight.onclick=()=>{
   }
 }
 
+$(document).ready(function () {
+    $("#products-card .products-navbar h6").click(function () {
+        $("products-card .products-navbar ul").slideToggle(500);
+    });
+})
+
+let heading_li = document.querySelectorAll("#products-card .products-navbar ul li a");
+let show_products = document.querySelectorAll("#allProducts .same_product");
+
+for (let a of heading_li) {
+    a.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector("#products-card .products-navbar ul .selected").classList.remove("selected");
+        this.classList.add("selected");
+        let data_id = this.parentElement.getAttribute("data-id");
+        for (let sp of show_products) {
+            if (data_id == sp.getAttribute("data-id")) {
+                sp.classList.remove("d-none");
+            }
+            else {
+                sp.classList.add("d-none");
+            }
+        }
+    })
+}
